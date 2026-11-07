@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Computer Engineering portfolio featuring embedded systems, digital design, and hardware-software integration projects." />
+  <title>Benjamin Angers | Computer Engineering</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home"><span class="logo-bracket">&lt;</span>BA<span class="logo-bracket">/&gt;</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#ecu-details">ECU Deep Dive</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+      </div>
+      <a class="nav-cta" href="resume.pdf" download>Download Resume ↗</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> COMPUTER ENGINEERING PORTFOLIO</p>
+        <p class="intro">Hello, I'm</p>
+        <h1>Benjamin<br/><span>Angers.</span></h1>
+        <h2>Computer Engineering Student <span class="divider">/</span> Embedded Systems &amp; Digital Design</h2>
+        <p class="hero-description">I design and develop systems where hardware meets software — from microcontroller-based automation to FPGA logic and real-time engineering applications.</p>
+        <div class="hero-actions"><a class="button primary" href="#projects">Explore My Work <span>↗</span></a><a class="button secondary" href="#contact">Get in Touch <span>→</span></a></div>
+        <div class="hero-meta"><span><span class="meta-dot"></span> Western New England University</span><span> B.S. Computer Engineering · In Progress</span></div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="visual-label top-label">SYSTEM_STATUS <span>● ONLINE</span></div>
+        <div class="chip-scene"><div class="chip-lines horizontal"></div><div class="chip-lines vertical"></div><div class="chip"><div class="chip-inner"><span>BA</span><small>ENGINEERING</small></div></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div></div>
+        <div class="visual-label bottom-label">HW / SW <span>INTEGRATION</span></div>
+      </div>
+    </section>
+    <section class="section container" id="about"><div class="section-heading"><span class="section-number">01 / ABOUT</span><h2>Engineering with <span>purpose.</span></h2></div><div class="about-layout"><p>I'm a Computer Engineering student at <strong>Western New England University</strong>, with an Associate of Science in Computer Engineering from Holyoke Community College. I enjoy understanding how systems work from the circuit level up to the software that controls them.</p><p>My interests include <strong>embedded systems, computer architecture, digital logic, and hardware-software integration.</strong> I’m looking for internship opportunities where I can contribute to real engineering challenges and continue developing my skills.</p></div></section>
+    <section class="section container" id="projects"><div class="section-heading"><span class="section-number">02 / SELECTED WORK</span><h2>Featured <span>projects.</span></h2><p>Hands-on work across embedded software, digital hardware, and system integration.</p></div><div class="project-grid">
+      <article class="project-card featured"><div class="project-top"><span class="project-index">PROJECT_001</span><span class="project-symbol">↗</span></div><div class="project-graphic engine-graphic"><span>ECU</span><div class="wave"></div><small>TELEMETRY / CONTROL</small></div><div class="project-content"><span class="project-type">EMBEDDED SYSTEMS · TEAM PROJECT</span><h3>Jet Engine ECU</h3><p>Developing and improving the ECU operator interface to give users greater control over the engine startup sequence, while preparing for future startup automation.</p><div class="tags"><span>C++</span><span>Qt UI</span><span>Linux</span><span>Startup Control</span></div><div class="project-links"><a class="text-link" href="#ecu-details">Read Case Study ↓</a></div></div></article>
+      <article class="project-card"><div class="project-top"><span class="project-index">PROJECT_002</span><span class="project-symbol">⌘</span></div><div class="project-graphic garage-graphic"><span>05</span><small>LEVEL PARKING CONTROL</small></div><div class="project-content"><span class="project-type">MICROCONTROLLERS · AUTOMATION</span><h3>Smart Parking Garage</h3><p>Designed a dual-gate, five-level parking system using an ATmega328PB, IR sensors, interrupts, UART, and an I²C LCD to track vehicle movement and availability.</p><div class="tags"><span>Embedded C</span><span>ATmega328PB</span><span>I²C</span><span>UART</span></div></div></article>
+      <article class="project-card"><div class="project-top"><span class="project-index">PROJECT_003</span><span class="project-symbol">◇</span></div><div class="project-graphic fpga-graphic"><span>FPGA</span><small>FINITE STATE MACHINE</small></div><div class="project-content"><span class="project-type">DIGITAL DESIGN · FPGA</span><h3>Elevator Controller</h3><p>Developed elevator control logic using VHDL and finite-state machine concepts for an FPGA-based digital systems project.</p><div class="tags"><span>VHDL</span><span>FPGA</span><span>FSM</span><span>Digital Logic</span></div></div></article>
+    </div></section>
+    <section class="section container ecu-study" id="ecu-details">
+      <div class="section-heading"><span class="section-number">03 / ENGINEERING DEEP DIVE</span><h2>Inside the <span>Jet Engine ECU.</span></h2><p>A closer look at my current focus: improving operator control of the startup sequence and laying the groundwork for future automation.</p></div>
+      <div class="study-intro"><div><span class="project-type">FEATURED CASE STUDY / IN PROGRESS</span><h3>ECU Operator Interface &amp; Startup Control</h3><p>The ECU software connects engine monitoring and control hardware with an operator-facing application. My primary responsibility is implementing and refining the user interface to support more direct, intuitive control of the engine startup sequence.</p><p>Working alongside mechanical and electrical engineering teammates, I am also exploring how the startup workflow could be automated in a future iteration. Automation is a goal in progress, not a completed feature.</p></div><div class="ecu-panel"><div class="panel-header"><span class="status-dot"></span> ECU / SIGNAL MAP <span class="panel-muted">REFERENCE</span></div><div class="signal-row"><span>HALL EFFECT</span><strong>GPIO 23 · INPUT</strong></div><div class="signal-row"><span>GLOW PLUG 1</span><strong>GPIO 13 · OUTPUT</strong></div><div class="signal-row"><span>GLOW PLUG 2</span><strong>GPIO 6 · OUTPUT</strong></div><div class="signal-row"><span>SOLENOID</span><strong>GPIO 5 · OUTPUT</strong></div><div class="signal-row"><span>FUEL PUMP</span><strong>PWM CONTROL</strong></div><div class="panel-footer">PIN ASSIGNMENTS FROM REVIEWED CODE · NOT A LIVE DISPLAY</div></div></div>
+      <div class="study-grid">
+        <article class="study-card"><span class="study-step">01 / CURRENT FOCUS</span><h3>Startup sequence UI</h3><p>Implementing and improving the operator interface so the startup process can be controlled more effectively. This includes designing how startup controls and system feedback are presented in the C++/Qt application.</p><code>Operator input → ECU interface → control commands</code><p>The goal is clearer interaction with the existing startup workflow.</p></article>
+        <article class="study-card"><span class="study-step">02 / ACTUATION</span><h3>PWM and GPIO control</h3><p>The software uses PWM duty-cycle values for fuel-pump and starter control, alongside digital GPIO signals for glow plugs and a solenoid. I have been tracing how these software outputs relate to the physical control system.</p><code>Duty cycle = on-time / period × 100%</code></article>
+        <article class="study-card"><span class="study-step">03 / NEXT PHASE</span><h3>Future startup automation</h3><p>Working toward a more automated startup sequence by studying the steps, operator decisions, and system feedback needed for a controlled workflow. This remains a future development objective.</p><code>Manual startup → guided workflow → future automation</code></article>
+      </div>
+      <div class="engineering-gallery" aria-label="Jet Engine ECU engineering diagrams and models">
+        <div class="gallery-heading"><span class="project-type">SYSTEM DESIGN / HARDWARE VISUALS</span><h3>Engineering diagrams &amp; hardware models</h3><p>System-level signal flow and CAD representations of the ECU and inlet PCB.</p></div>
+        <figure class="gallery-item gallery-wide"><a href="assets/system-architecture.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size system architecture diagram"><img src="assets/system-architecture.png" alt="Jet engine ECU system architecture diagram showing sensors, data acquisition, ECU, engine, and control outputs" loading="lazy"></a><figcaption><strong>System Architecture</strong><span>Sensor inputs, ECU signal processing, and PWM/digital outputs to the engine.</span></figcaption></figure>
+        <figure class="gallery-item"><a href="assets/ecu-hardware.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size ECU hardware model"><img src="assets/ecu-hardware.png" alt="3D CAD rendering of ECU interface board mounted above a computing board" loading="lazy"></a><figcaption><strong>ECU Hardware</strong><span>CAD rendering of the controller board and connector interface.</span></figcaption></figure>
+        <figure class="gallery-item"><a href="assets/inlet-pcb.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size inlet PCB model"><img src="assets/inlet-pcb.png" alt="3D CAD rendering of curved inlet PCB with electronic components" loading="lazy"></a><figcaption><strong>Inlet PCB</strong><span>CAD rendering of the curved inlet circuit board and its component placement.</span></figcaption></figure>
+      </div>
+      <div class="study-next"><strong>Current focus</strong><p>Improve startup-sequence controls and feedback in the Qt interface; investigate requirements for eventual startup automation. Automated startup has not yet been implemented.</p></div>
+    </section>
+    <section class="section container" id="skills"><div class="section-heading"><span class="section-number">04 / TOOLKIT</span><h2>Technical <span>skills.</span></h2></div><div class="skill-grid"><div class="skill-box"><h3>Programming</h3><p>C · C++ · VHDL · Bash</p></div><div class="skill-box"><h3>Hardware</h3><p>Microcontrollers · FPGA · GPIO · UART · I²C</p></div><div class="skill-box"><h3>Tools &amp; Platforms</h3><p>Linux · Git/GitHub · MATLAB · LTspice · VirtualBox</p></div></div></section>
+    <section class="section container contact" id="contact"><span class="section-number">05 / CONNECT</span><h2>Let's build something <span>meaningful.</span></h2><p>Interested in embedded systems, digital hardware, or computer engineering collaboration? I'd be glad to connect.</p><div class="hero-actions"><a class="button primary" href="https://github.com/dupont14" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="button secondary" href="resume.pdf" download>Download Resume ↓</a></div><p class="contact-note">Add your email and LinkedIn URL here before publishing.</p></section>
+  </main>
+  <footer class="container footer"><span>© <span id="year"></span> Benjamin Angers</span><span>DESIGNED &amp; BUILT WITH PURPOSE_</span><a href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
